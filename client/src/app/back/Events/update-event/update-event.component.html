@@ -1,0 +1,135 @@
+<ng-template #confirmAdd let-modal1>
+  <div
+    id="modal-notification"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="modal1-notification"
+  >
+    <div class="modal-danger" role="document">
+      <div class="modal-content bg-gradient-danger">
+        <div class="modal-header">
+          <h6 class="modal-title" id="modal1-title-notification">
+            Your attention is required
+          </h6>
+          <button
+            type="button"
+            class="close"
+            aria-label="Close"
+            (click)="modal1.dismiss('Cross click')"
+          >
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="py-3 text-center">
+            <i class="ni ni-bell-55 ni-3x"></i>
+            <h4 class="heading mt-4">Confirmation Alert</h4>
+            <p>Your Event is Updated.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-white" (click)="modal1.dismiss('Cross click')">Ok, Got it</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<div class="header bg-gradient-danger pb-8 pt-3 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <div class="col-lg-7 col-md-10">
+        <h1 class="display-2 text-white">Events</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col">
+      <div class="card shadow">
+        <div class="card-header bg-transparent">
+          <h3 class="mb-0">Update Event</h3>
+        </div>
+        <div class="container">
+          <form #userForm="ngForm">
+            <div class="row">
+              <div class="col-md-5 col-sm-5">
+                <br/>
+                <h6>Picture</h6>
+                <app-image-upload
+                  [imgpacktoupdateinput]="img"
+                ></app-image-upload>
+              </div>
+
+              <div class="col-md-7 col-sm-7">
+
+                <div class="form-group">
+                  <h6>
+                    Title<span class="icon-danger text-orange">&nbsp; *</span>
+                  </h6>
+                  <input
+                    type="text"
+                    class="form-control border-input"
+                    placeholder="title"
+                    name="title"
+                    [(ngModel)]="event.title"
+                    #titleID="ngModel"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <h6>
+                    Description<span class="icon-danger text-orange"
+                  >&nbsp; *</span
+                  >
+                  </h6>
+                  <input
+                    type="text"
+                    class="form-control border-input"
+                    placeholder="Description"
+                    name="Description"
+                    [(ngModel)]="event.description"
+                    #descriptionID="ngModel"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <h6>
+                    Date <span class="icon-danger text-orange"
+                  >&nbsp; *</span
+                  >
+                  </h6>
+                  <input
+                    type="date"
+                    class="form-control border-input"
+                    placeholder="Description"
+                    name="date_event"
+                    [(ngModel)]="event.date_event"
+                    #date_eventID="ngModel"
+                    required
+                  />
+                </div>
+
+                <div class="row buttons-row">
+                  <div class="col-md-4 col-sm-4">
+                    <button
+                      class="btn btn-outline-danger btn-block btn-round"
+                      (click)="onclickenvoyer($event, confirmAdd)"
+                    >
+                      Update
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <br/><br/>
+      </div>
+    </div>
+  </div>
+</div>

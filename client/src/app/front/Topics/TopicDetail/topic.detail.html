@@ -1,0 +1,79 @@
+<!-- Card header -->
+<div class="card-header forum-card-img-30 d-flex justify-content-between">
+  <p class="pt-2 mb-0">
+    <img src="https://secure.gravatar.com/avatar/62c9c125499e280d7f96a75e939f3046?s=96&amp;d=mm&amp;r=g" alt=""
+         class="rounded-circle mr-2">
+    <strong><a href="https://mdbootstrap.com/profile/?id=35406" target="_blank">fredemagi</a></strong>
+    asked 2 years ago </p>
+</div>
+<!--Card content-->
+<div class="card-body">
+  <div class="row">
+    <div class="col-md-9">
+      {{topic.description}}
+    </div>
+    <div class="col-md-3 text-right" style="font-size: 11px;">
+      <a (click)="collapseCardTopic(topic)" *ngIf="(topic.comments.length > 0 && topic.collapsed == false)">Show
+        comments</a>
+      <a (click)="collapseCardTopic(topic)" *ngIf="(topic.collapsed == true)">Hide comments</a>
+    </div>
+  </div>
+  <hr>
+  <!-- Comments -->
+  <div class="comment-card ml-5" *ngIf="(topic.comments && topic.collapsed ===true)">
+    <!-- Single comment -->
+    <div *ngFor="let c of topic.cs, let i= index">
+<!--      <CommentDetail [comment]="c"></CommentDetail>-->
+      <small class="row comment-item text-muted">
+        <div class="col-md-2">
+          <img src="https://secure.gravatar.com/avatar/62c9c125499e280d7f96a75e939f3046?s=96&amp;d=mm&amp;r=g"
+               alt=""
+               class="rounded-circle mr-2">
+        </div>
+        <div class="col-md-7">
+          <p class="mb-2">
+            <strong><a href="https://mdbootstrap.com/profile/?id=72880"
+                       target="_blank">{{c.commentedBy.name}}</a></strong>
+            commented 8 months ago </p>
+          <p>{{c.text}} </p>
+
+        </div>
+        <div class="col-md-3" *ngIf="currentUser">
+          <button (click)="like(c)" [disabled]="alreadyInLikers(c)" type="button"
+                  class="btn btn-secondary  btn-sm px-2 waves-effect show_login">
+            <span class="value">{{c.likers?.length}}</span>
+            <i class="far fa-thumbs-up ml-1"></i>
+          </button>
+          <button (click)="dislike(c)" [disabled]="alreadyInDisliker(c)"
+                  class="btn btn-outline-danger btn-sm px-2 waves-effect show_login">
+            <!--                  <button (click)="like(c)" *ngIf="c.likers.indexOf(currentUser._id) > -1" class="btn btn-outline-danger btn-sm px-2 waves-effect show_login">-->
+            <span class="value">{{c.dislikers?.length}}</span>
+            <i class="far fa-thumbs-down ml-1"></i>
+          </button>
+          <button class="text-warning" *ngIf="c.commentedBy._id === currentUser.id"
+                  (click)="deleteComment(topic, c, i)"><i class="fa fa-trash"></i>
+          </button>
+        </div>
+      </small>
+      <hr>
+    </div>
+  </div>
+  <div class="card-footer">
+    <form [formGroup]="addCommentFrom" *ngIf="currentUser">
+              <textarea
+                class="form-control form-control-alternative"
+                formControlName="text"
+                rows="4"
+                cols="80"
+                placeholder="Response .."
+              ></textarea>
+      <div class="form-group mb-0">
+        <button [disabled]="!addCommentFrom.valid"
+                (click)="addComment(topic)"
+                class="btn btn-info btn-sm ml-0 comment-form-toggle show_login waves-effect waves-light">Add
+          comment
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

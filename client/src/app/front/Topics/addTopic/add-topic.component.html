@@ -1,0 +1,26 @@
+<section class="section section-lg">
+  <div class="container">
+    <div class="card-body">
+      <form [formGroup]="addTopicFrom">
+        <div class="form-group">
+          <label>Titre de la publication</label>
+          <input type="text" formControlName="titre" class="form-control form-control-alternative">
+        </div>
+        <div class="form-group">
+          <label>Description : </label>
+          <textarea formControlName="description" class="form-control form-control-alternative"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Type :</label><select class="custom-select" formControlName="categorie">
+          <option value="Gameplay">Gameplay</option>
+          <option value="Bugs">Bugs</option>
+          <option value="Comptetions">Comptetions</option>
+          <option value="Claims">Claims</option>
+          <option value="Others">Others</option>
+        </select>
+        </div>
+        <button (click)="addTopic()" [disabled]="!addTopicFrom.valid" class="btn btn-primary my-4">Confirmer</button>
+      </form>
+    </div>
+  </div>
+</section>

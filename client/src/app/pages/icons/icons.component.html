@@ -1,0 +1,1135 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+      <div class="row">
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Traffic</h5>
+                  <span class="h2 font-weight-bold mb-0">350,897</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">New users</h5>
+                  <span class="h2 font-weight-bold mb-0">2,356</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                    <i class="fas fa-chart-pie"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 3.48%</span>
+                <span class="text-nowrap">Since last week</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Sales</h5>
+                  <span class="h2 font-weight-bold mb-0">924</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-warning mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
+                <span class="text-nowrap">Since yesterday</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Performance</h5>
+                  <span class="h2 font-weight-bold mb-0">49,65%</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-info text-white rounded-circle shadow">
+                    <i class="fas fa-percent"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--7">
+  <!-- Table -->
+  <div class="row">
+    <div class="col">
+      <div class="card shadow">
+        <div class="card-header bg-transparent">
+          <h3 class="mb-0">Icons</h3>
+        </div>
+        <div class="card-body">
+          <div class="row icon-examples">
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'active-40'" [cbContent]="'active-40'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'active-40' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-active-40"></i>
+                  <span>active-40</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'air-baloon'" [cbContent]="'air-baloon'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'air-baloon' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-air-baloon"></i>
+                  <span>air-baloon</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'album-2'" [cbContent]="'album-2'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'album-2' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-album-2"></i>
+                  <span>album-2</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'align-center'" [cbContent]="'align-center'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'align-center' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-align-center"></i>
+                  <span>align-center</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'align-left-2'" [cbContent]="'align-left-2'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'align-left-2' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-align-left-2"></i>
+                  <span>align-left-2</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'ambulance'" [cbContent]="'ambulance'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'ambulance' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-ambulance"></i>
+                  <span>ambulance</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'app'" [cbContent]="'app'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'app' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-app"></i>
+                  <span>app</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'archive-2'" [cbContent]="'archive-2'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'archive-2' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-archive-2"></i>
+                  <span>archive-2</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'atom'" [cbContent]="'atom'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'atom' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-atom"></i>
+                  <span>atom</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'badge'" [cbContent]="'badge'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'badge' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-badge"></i>
+                  <span>badge</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'bag-17'" [cbContent]="'bag-17'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'bag-17' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-bag-17"></i>
+                  <span>bag-17</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'basket'" [cbContent]="'basket'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'basket' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-basket"></i>
+                  <span>basket</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'bell-55'" [cbContent]="'bell-55'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'bell-55' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-bell-55"></i>
+                  <span>bell-55</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'bold-down'" [cbContent]="'bold-down'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'bold-down' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-bold-down"></i>
+                  <span>bold-down</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'bold-left'" [cbContent]="'bold-left'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'bold-left' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-bold-left"></i>
+                  <span>bold-left</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'bold-right'" [cbContent]="'bold-right'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'bold-right' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-bold-right"></i>
+                  <span>bold-right</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'bold-up'" [cbContent]="'bold-up'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'bold-up' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-bold-up"></i>
+                  <span>bold-up</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'bold'" [cbContent]="'bold'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'bold' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-bold"></i>
+                  <span>bold</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'book-bookmark'" [cbContent]="'book-bookmark'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'book-bookmark' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-book-bookmark"></i>
+                  <span>book-bookmark</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'books'" [cbContent]="'books'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'books' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-books"></i>
+                  <span>books</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'box-2'" [cbContent]="'box-2'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'box-2' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-box-2"></i>
+                  <span>box-2</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'briefcase-24'" [cbContent]="'briefcase-24'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'briefcase-24' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-briefcase-24"></i>
+                  <span>briefcase-24</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'building'" [cbContent]="'building'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'building' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-building"></i>
+                  <span>building</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'bulb-61'" [cbContent]="'bulb-61'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'bulb-61' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-bulb-61"></i>
+                  <span>bulb-61</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'bullet-list-67'" [cbContent]="'bullet-list-67'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'bullet-list-67' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-bullet-list-67"></i>
+                  <span>bullet-list-67</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'bus-front-12'" [cbContent]="'bus-front-12'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'bus-front-12' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-bus-front-12"></i>
+                  <span>bus-front-12</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'button-pause'" [cbContent]="'button-pause'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'button-pause' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-button-pause"></i>
+                  <span>button-pause</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'button-play'" [cbContent]="'button-play'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'button-play' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-button-play"></i>
+                  <span>button-play</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'button-power'" [cbContent]="'button-power'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'button-power' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-button-power"></i>
+                  <span>button-power</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'calendar-grid-58'" [cbContent]="'calendar-grid-58'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'calendar-grid-58' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-calendar-grid-58"></i>
+                  <span>calendar-grid-58</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'camera-compact'" [cbContent]="'camera-compact'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'camera-compact' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-camera-compact"></i>
+                  <span>camera-compact</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'caps-small'" [cbContent]="'caps-small'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'caps-small' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-caps-small"></i>
+                  <span>caps-small</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'cart'" [cbContent]="'cart'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'cart' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-cart"></i>
+                  <span>cart</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'chart-bar-32'" [cbContent]="'chart-bar-32'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'chart-bar-32' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-chart-bar-32"></i>
+                  <span>chart-bar-32</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'chart-pie-35'" [cbContent]="'chart-pie-35'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'chart-pie-35' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-chart-pie-35"></i>
+                  <span>chart-pie-35</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'chat-round'" [cbContent]="'chat-round'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'chat-round' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-chat-round"></i>
+                  <span>chat-round</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'check-bold'" [cbContent]="'check-bold'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'check-bold' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-check-bold"></i>
+                  <span>check-bold</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'circle-08'" [cbContent]="'circle-08'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'circle-08' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-circle-08"></i>
+                  <span>circle-08</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'cloud-download-95'" [cbContent]="'cloud-download-95'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'cloud-download-95' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-cloud-download-95"></i>
+                  <span>cloud-download-95</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'cloud-upload-96'" [cbContent]="'cloud-upload-96'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'cloud-upload-96' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-cloud-upload-96"></i>
+                  <span>cloud-upload-96</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'compass-04'" [cbContent]="'compass-04'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'compass-04' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-compass-04"></i>
+                  <span>compass-04</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'controller'" [cbContent]="'controller'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'controller' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-controller"></i>
+                  <span>controller</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'credit-card'" [cbContent]="'credit-card'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'credit-card' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-credit-card"></i>
+                  <span>credit-card</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'curved-next'" [cbContent]="'curved-next'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'curved-next' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-curved-next"></i>
+                  <span>curved-next</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'delivery-fast'" [cbContent]="'delivery-fast'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'delivery-fast' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-delivery-fast"></i>
+                  <span>delivery-fast</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'diamond'" [cbContent]="'diamond'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'diamond' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-diamond"></i>
+                  <span>diamond</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'email-83'" [cbContent]="'email-83'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'email-83' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-email-83"></i>
+                  <span>email-83</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'fat-add'" [cbContent]="'fat-add'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'fat-add' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-fat-add"></i>
+                  <span>fat-add</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'fat-delete'" [cbContent]="'fat-delete'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'fat-delete' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-fat-delete"></i>
+                  <span>fat-delete</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'fat-remove'" [cbContent]="'fat-remove'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'fat-remove' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-fat-remove"></i>
+                  <span>fat-remove</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'favourite-28'" [cbContent]="'favourite-28'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'favourite-28' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-favourite-28"></i>
+                  <span>favourite-28</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'folder-17'" [cbContent]="'folder-17'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'folder-17' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-folder-17"></i>
+                  <span>folder-17</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'glasses-2'" [cbContent]="'glasses-2'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'glasses-2' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-glasses-2"></i>
+                  <span>glasses-2</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'hat-3'" [cbContent]="'hat-3'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'hat-3' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-hat-3"></i>
+                  <span>hat-3</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'headphones'" [cbContent]="'headphones'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'headphones' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-headphones"></i>
+                  <span>headphones</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'html5'" [cbContent]="'html5'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'html5' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-html5"></i>
+                  <span>html5</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'istanbul'" [cbContent]="'istanbul'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'istanbul' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-istanbul"></i>
+                  <span>istanbul</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'circle-08'" [cbContent]="'circle-08'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'circle-08' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-circle-08"></i>
+                  <span>circle-08</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'key-25'" [cbContent]="'key-25'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'key-25' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-key-25"></i>
+                  <span>key-25</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'laptop'" [cbContent]="'laptop'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'laptop' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-laptop"></i>
+                  <span>laptop</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'like-2'" [cbContent]="'like-2'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'like-2' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-like-2"></i>
+                  <span>like-2</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'lock-circle-open'" [cbContent]="'lock-circle-open'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'lock-circle-open' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-lock-circle-open"></i>
+                  <span>lock-circle-open</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'map-big'" [cbContent]="'map-big'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'map-big' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-map-big"></i>
+                  <span>map-big</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'mobile-button'" [cbContent]="'mobile-button'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'mobile-button' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-mobile-button"></i>
+                  <span>mobile-button</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'money-coins'" [cbContent]="'money-coins'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'money-coins' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-money-coins"></i>
+                  <span>money-coins</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'note-03'" [cbContent]="'note-03'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'note-03' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-note-03"></i>
+                  <span>note-03</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'notification-70'" [cbContent]="'notification-70'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'notification-70' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-notification-70"></i>
+                  <span>notification-70</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'palette'" [cbContent]="'palette'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'palette' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-palette"></i>
+                  <span>palette</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'paper-diploma'" [cbContent]="'paper-diploma'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'paper-diploma' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-paper-diploma"></i>
+                  <span>paper-diploma</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'pin-3'" [cbContent]="'pin-3'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'pin-3' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-pin-3"></i>
+                  <span>pin-3</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'planet'" [cbContent]="'planet'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'planet' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-planet"></i>
+                  <span>planet</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'ruler-pencil'" [cbContent]="'ruler-pencil'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'ruler-pencil' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-ruler-pencil"></i>
+                  <span>ruler-pencil</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'satisfied'" [cbContent]="'satisfied'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'satisfied' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-satisfied"></i>
+                  <span>satisfied</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'scissors'" [cbContent]="'scissors'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'scissors' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-scissors"></i>
+                  <span>scissors</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'send'" [cbContent]="'send'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'send' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-send"></i>
+                  <span>send</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'settings-gear-65'" [cbContent]="'settings-gear-65'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'settings-gear-65' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-settings-gear-65"></i>
+                  <span>settings-gear-65</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'settings'" [cbContent]="'settings'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'settings' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-settings"></i>
+                  <span>settings</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'single-02'" [cbContent]="'single-02'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'single-02' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-single-02"></i>
+                  <span>single-02</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'single-copy-04'" [cbContent]="'single-copy-04'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'single-copy-04' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-single-copy-04"></i>
+                  <span>single-copy-04</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'sound-wave'" [cbContent]="'sound-wave'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'sound-wave' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-sound-wave"></i>
+                  <span>sound-wave</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'spaceship'" [cbContent]="'spaceship'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'spaceship' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-spaceship"></i>
+                  <span>spaceship</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'square-pin'" [cbContent]="'square-pin'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'square-pin' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-square-pin"></i>
+                  <span>square-pin</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'support-16'" [cbContent]="'support-16'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'support-16' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-support-16"></i>
+                  <span>support-16</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'tablet-button'" [cbContent]="'tablet-button'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'tablet-button' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-tablet-button"></i>
+                  <span>tablet-button</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'tag'" [cbContent]="'tag'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'tag' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-tag"></i>
+                  <span>tag</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'tie-bow'" [cbContent]="'tie-bow'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'tie-bow' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-tie-bow"></i>
+                  <span>tie-bow</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'time-alarm'" [cbContent]="'time-alarm'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'time-alarm' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-time-alarm"></i>
+                  <span>time-alarm</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'trophy'" [cbContent]="'trophy'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'trophy' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-trophy"></i>
+                  <span>trophy</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'tv-2'" [cbContent]="'tv-2'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'tv-2' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-tv-2"></i>
+                  <span>tv-2</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'umbrella-13'" [cbContent]="'umbrella-13'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'umbrella-13' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-umbrella-13"></i>
+                  <span>umbrella-13</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'user-run'" [cbContent]="'user-run'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'user-run' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-user-run"></i>
+                  <span>user-run</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'vector'" [cbContent]="'vector'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'vector' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-vector"></i>
+                  <span>vector</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'watch-time'" [cbContent]="'watch-time'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'watch-time' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-watch-time"></i>
+                  <span>watch-time</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'world'" [cbContent]="'world'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'world' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-world"></i>
+                  <span>world</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'zoom-split-in'" [cbContent]="'zoom-split-in'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'zoom-split-in' ? 'Copied':'Copy to clipboard'}}"
+                      ngxClipboard placement="top-center" triggers="hover focus click"
+                      type="button">
+                <div>
+                  <i class="ni ni-zoom-split-in"></i>
+                  <span>zoom-split-in</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'collection'" [cbContent]="'collection'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'collection' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-collection"></i>
+                  <span>collection</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'image'" [cbContent]="'image'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'image' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-image"></i>
+                  <span>image</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'shop'" [cbContent]="'shop'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'shop' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-shop"></i>
+                  <span>shop</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'ungroup'" [cbContent]="'ungroup'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'ungroup' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-ungroup"></i>
+                  <span>ungroup</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'world-2'" [cbContent]="'world-2'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'world-2' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-world-2"></i>
+                  <span>world-2</span>
+                </div>
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <button (cbOnSuccess)="copy = 'ui-04'" [cbContent]="'ui-04'" class="btn-icon-clipboard"
+                      ngbTooltip="{{copy === 'ui-04' ? 'Copied':'Copy to clipboard'}}" ngxClipboard
+                      placement="top-center" triggers="hover focus click" type="button">
+                <div>
+                  <i class="ni ni-ui-04"></i>
+                  <span>ui-04</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

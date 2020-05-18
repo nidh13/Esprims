@@ -1,0 +1,352 @@
+<style>
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-size: 1.25em;
+    line-height: 1.1;
+  }
+
+  @media (min-width: 91em) {
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img,
+  figure {
+    max-width: 100%;
+    height: auto;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .grid-xlarge {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: 54em) {
+    .grid-xlarge {
+      width: 95%;
+    }
+  }
+
+  @media (min-width: 91em) {
+    .grid-xlarge {
+      width: 80%;
+    }
+  }
+
+  .absolute-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  .team {
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 3em;
+  }
+
+  .team__container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin-left: -1em;
+    margin-right: -1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team__container > * {
+    padding: 1em;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: 32em) {
+    .team__container > * {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (min-width: 54em) {
+    .team__container > * {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (min-width: 65em) {
+    .team__container > * {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+  }
+
+  .team__link {
+    position: relative;
+    display: block;
+    height: 400px;
+    width: 100%;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: all 1s ease;
+  }
+
+  .team__link:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 47px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate3d(0, -0.5em, 0);
+    transform: translate3d(0, -0.5em, 0);
+  }
+
+  .team__link:hover:after {
+    opacity: 1;
+  }
+
+  .team__link:hover .team__title:after {
+    left: 0;
+    width: 100%;
+  }
+
+  .team__link:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-clip: padding-box;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .team__header {
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .team__img-container {
+    position: relative;
+    background-color: #061c30;
+  }
+
+  .team__img {
+    position: relative;
+    padding-bottom: 100%;
+    -webkit-animation: fade-in ease-in-out 1s both;
+    animation: fade-in ease-in-out 1s both;
+  }
+
+  .team__text {
+    padding: 1em 0.5em;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  @media (min-width: 32em) {
+    .team__text {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+  }
+
+  .team__title {
+    position: relative;
+    display: inline-block;
+    /*
+     * Add hover to pseudo element
+     * left: 0;
+     * width: 100%
+     */
+    margin-bottom: 0.35em;
+  }
+
+  .team__title:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.1em;
+    height: 2px;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .team__position {
+    display: block;
+    font-size: 0.9em;
+  }
+
+</style>
+
+<link rel="stylesheet" href="../../../../assets/nidhal/assets/css/style.css">
+<section
+  class="section pb-0 "
+  style="background: linear-gradient(87deg, #36aef5 0, #36f59df2 100%) !important; height: 200px  "
+>
+  <div class="container">
+    <div class="row row-grid align-items-center">
+      <div class="col-md-6 text-right order-lg-2 ml-lg-auto">
+        <div class="position-relative right pl-md-5"></div>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <div class="d-flex px-3">
+          <div class="pl-4">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- SVG separator -->
+  <div class="separator separator-bottom separator-skew zindex-100">
+    <svg
+      x="0"
+      y="0"
+      viewBox="0 0 2560 100"
+      preserveAspectRatio="none"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+    </svg>
+  </div>
+</section>
+<div class="container">
+  <h1 style="text-align: center;">Jealous Team</h1>
+
+  <section>
+    <div _ngcontent-c6="" class="ct-page-title">
+      <h3 _ngcontent-c6="" class="ct-title" id="content">About our project</h3>
+      <div _ngcontent-c6="" class="avatar-group mt-3"></div>
+    </div>
+    <p>
+      The ESPRIMS project is a Tunisian initiative which has been studied based on recent new technologies
+      and which has made it possible to develop a student life simulation game that can promote learning with
+      maximum entertainment while pushing the player to become dynamic during learning entry by giving him the
+      opportunity
+      to discover the internal architecture of ESPRIT and facilitates the interconnection of students.</p>
+  </section>
+  <section>
+    <div _ngcontent-c6="" class="ct-page-title"><h3 _ngcontent-c6="" class="ct-title" id="content">A propos</h3>
+      <div _ngcontent-c6="" class="avatar-group mt-3"></div>
+    </div>
+    <p>Le projet ESPRIMS est une initiative tunisienne qui a ete étudié en se basant sur les nouvelles technologies
+      récentes
+      et qui a permis de développer un jeu de simulation de vie étudiante pouvant favoriser l’apprentissage avec le
+      maximum
+      de divertissement toute en poussant le joueur à devenir dynamique pendant sont apprentissages en lui donnant la
+      possibilité de découvrir l'architecture interne d'ESPRIT et facilite l'interconnexion des étudiants.</p>
+  </section>
+
+  <!-- Team -->
+  <section class="team">
+    <div class="grid-xlarge">
+      <div class="team__container">
+        <article  class="team__link col-md-3" >
+            <div class="team__img-container">
+              <figure class="team__img">
+                <img class="absolute-bg" src="../../../assets/img/members/anwer.png" alt=""/>
+              </figure>
+            </div>
+            <div class="team__text ">
+              <h3 class="team__title">Awner Khssib</h3>
+              <span class="team__position">anwer.khssib@esprit.tn</span>
+            </div>
+        </article>
+        <article  class="team__link col-md-3" >
+            <div class="team__img-container">
+              <figure class="team__img">
+                <img class="absolute-bg" src="../../../assets/img/members/mohamedKais.png" alt=""/>
+              </figure>
+            </div>
+            <div class="team__text">
+              <h3 class="team__title">Mohamed Kais Fahem</h3>
+              <span class="team__position">mohamed-kais.fahem@esprit.tn</span>
+            </div>
+        </article>
+        <article  class="team__link col-md-3" >
+            <div class="team__img-container">
+              <figure class="team__img">
+                <img class="absolute-bg" src="../../../assets/img/members/nidhal.png" alt=""/>
+              </figure>
+            </div>
+            <div class="team__text">
+              <h3 class="team__title">Nidhal Mazhoud</h3>
+              <span class="team__position">nidhal.mazhoud@esprit.tn</span>
+            </div>
+        </article>
+        <article  class="team__link col-md-3" >
+            <div class="team__img-container">
+              <figure class="team__img">
+                <img class="absolute-bg" src="../../../assets/img/theme/team-4-800x800.jpg" alt=""/>
+              </figure>
+            </div>
+            <div class="team__text">
+              <h3 class="team__title">Amira Riahi</h3>
+              <span class="team__position">amira.riahi@esprit.tn</span>
+            </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>

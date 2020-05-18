@@ -1,0 +1,100 @@
+<div class="header bg-gradient-danger pb-8 pt-3 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body row">
+      <div class="col-md-8">
+        <h1 class="display-2 text-white">Events</h1>
+      </div>
+      <div class="col-md-4 text-right">
+        <a class="btn btn-secondary" routerLink="/dash/allevents">Retour a la liste</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-12 order-xl-1">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3 class="mb-0">Add Event</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <form>
+            <h6 class="heading-small text-muted mb-4">Event information</h6>
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-username"
+                      >Title</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-alternative"
+                      placeholder="Title"
+                      name="title"
+                      [(ngModel)]="event.title"
+                      #titleId="ngModel"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-first-name"
+                      >Description</label
+                    >
+                    <textarea
+                      rows="4"
+                      class="form-control form-control-alternative"
+                      placeholder="A few words about the event ..."
+                      name="description"
+                      [(ngModel)]="event.description"
+                      #descriptionId="ngModel"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-first-name"
+                      >Date</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control form-control-alternative"
+                      name="date_event"
+                      [(ngModel)]="event.date_event"
+                      #date_eventID="ngModel"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="pl-lg-2 ">
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <app-image-upload [isRound]="true"></app-image-upload>
+                  </div>
+                </div>
+              </div>
+              <div class=" text-right">
+                <a
+                  class="btn  btn-default float-right text-white"
+                  (click)="onclickenvoyer($event)"
+                  >Add</a
+                >
+              </div>
+            </div>
+            <hr class="my-4" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

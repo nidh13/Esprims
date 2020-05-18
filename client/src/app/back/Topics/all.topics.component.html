@@ -1,0 +1,72 @@
+<div class="header bg-gradient-danger pb-8 pt-3 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <div class="col-lg-7 col-md-10">
+        <h1 class="display-2 text-white">Topics</h1>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--7">
+  <!-- Table -->
+  <div class="row">
+    <div class="col">
+      <div class="card shadow">
+        <div class="card-header border-0">
+        </div>
+        <div class="col-4 text-right ">
+        </div>
+        <div class="table-responsive">
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Description</th>
+              <th scope="col">Categorie</th>
+              <th scope="col">Users</th>
+              <th scope="col">Actions</th>
+
+            </tr>
+            </thead>
+            <tbody *ngFor="let e of topics">
+            <tr>
+              <th scope="row">
+                <div class="media align-items-center">
+
+                  <div class="media-body">
+                    <span class="mb-0 text-sm">{{e.title}}</span>
+                  </div>
+                </div>
+              </th>
+              <td>
+                {{e.description}}
+              </td>
+              <td>
+                  <span class="badge badge-dot mr-4">
+                    {{e.categorie}}
+                  </span>
+              </td>
+              <td>
+                <div class="avatar-group">
+                  <a href="javascript:void(0)" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                    <img alt="Image placeholder" [src]="e.picture" class="rounded-circle">
+                  </a>
+                </div>
+              </td>
+              <td class="text-right">
+                <a (click)="delete(e._id)" class="btn btn-sm btn-danger mr-4">Delete</a>
+              </td>
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

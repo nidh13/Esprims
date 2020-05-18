@@ -1,0 +1,186 @@
+<style>
+  .titeText {
+    font-size: 20px !important;
+  }
+
+  .dateText {
+    font-size: 20px;
+  }
+</style>
+
+<section
+  class="section pb-0 "
+  style="background: linear-gradient(87deg, #36aef5 0, #36f59df2 100%) !important "
+>
+  <div class="container">
+    <div class="row row-grid align-items-center">
+      <div class="col-md-6 text-right order-lg-2 ml-lg-auto">
+        <div class="position-relative right pl-md-5"></div>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <div class="d-flex px-3">
+          <div class="pl-4">
+            <h4 class="display-3 text-white">Welcome to the forum</h4>
+            <p class="text-white">
+              Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
+              sem quam semper libero,
+            </p>
+            <a
+              routerLink="/topics/add"
+              class="btn btn-info btn-icon mb-3 mb-sm-0"
+            >
+              <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
+              <span class="btn-inner--text">Add</span>
+            </a>
+          </div>
+        </div>
+        <div class="shadow shadow-lg--hover mt-5">
+          <div>
+            <div class="d-flex px-3">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SVG separator -->
+  <div class="separator separator-bottom separator-skew zindex-100">
+    <svg
+      x="0"
+      y="0"
+      viewBox="0 0 2560 100"
+      preserveAspectRatio="none"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+    </svg>
+  </div>
+</section>
+<section class="section section-lg">
+  <div class="container">
+    <br/>
+    <br/>
+    <br/>
+    <div class="row row-grid align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="row row-grid">
+            <!-- Forum Top 1 -->
+            <div class="col-md-3" *ngFor="let t of topics| paginate: { itemsPerPage: 8, currentPage: p }">
+              <a routerLink="/topics/id/{{ t._id }}">
+                <div class="card card-lift--hover shadow border-0">
+                  <div class="card bg-default shadow border-0">
+                    <img *ngIf="t.categorie == 'Gameplay'"
+                         src="../../../../assets/nidhal/assets/img/bg-img/12.jpg"
+                         class="card-img-top"
+                    />
+                    <img *ngIf="t.categorie == 'Bugs'"
+                         src="../../../../assets/nidhal/assets/img/bg-img/26.jpg"
+                         class="card-img-top"
+                    />
+                    <img *ngIf="t.categorie == 'Comptetions'"
+                         src="../../../../assets/nidhal/assets/img/bg-img/8.jpg"
+                         class="card-img-top"
+                    />
+                    <img *ngIf="t.categorie == 'Claims'"
+                         src="../../../../assets/nidhal/assets/img/bg-img/29.jpg"
+                         class="card-img-top"
+                    />
+                    <img *ngIf="t.categorie == 'Others'"
+                         src="../../../../assets/nidhal/assets/img/bg-img/4.jpg"
+                         class="card-img-top"
+                    />
+                    <blockquote class="card-blockquote">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 583 95"
+                        class="svg-bg"
+                      >
+                        <polygon
+                          points="0,52 583,95 0,95"
+                          class="fill-default"
+                        />
+                        <polygon
+                          points="0,42 583,95 683,0 0,95"
+                          opacity=".2"
+                          class="fill-default"
+                        />
+                      </svg>
+                      <h6 class="display-3 font-weight-bold text-white titeText">
+                        {{ t.title }}
+                      </h6>
+                      <p class="lead text-italic text-white dateText">
+                        {{ t.createdAt | date: 'fullDate' }} - {{ t.createdBy }}
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <br><br>
+          <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-lg pt-lg-0 mt--200">
+  <div class="container"></div>
+</section>
+
+<footer class="footer has-cards">
+  <div class="container">
+    <hr/>
+    <div class="row align-items-center justify-content-md-between">
+      <div class="col-md-6">
+        <div class="copyright">
+          &copy; 2019
+          <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a
+          >.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-footer justify-content-end">
+          <li class="nav-item">
+            <a
+              href="https://www.creative-tim.com"
+              class="nav-link"
+              target="_blank"
+            >Creative Tim</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.creative-tim.com/presentation"
+              class="nav-link"
+              target="_blank"
+            >About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="http://blog.creative-tim.com"
+              class="nav-link"
+              target="_blank"
+            >Blog</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
+              class="nav-link"
+              target="_blank"
+            >MIT License</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

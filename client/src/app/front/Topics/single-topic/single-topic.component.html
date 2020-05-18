@@ -1,0 +1,131 @@
+<style>
+  .cardDiv {
+    padding: 1.25rem;
+    border: 1px solid #e6ecf1;
+    border-radius: .25rem;
+    background-color: #f5f7f9;
+    margin-bottom: 25px;
+  }
+</style>
+
+<section class="section bg-secondary">
+  <div class="container">
+    <div class="row row-grid align-items-center">
+      <div class="col-md-6">
+        <div class="card bg-default shadow border-0">
+          <ng-container *ngIf="topic.categorie == 'Gameplay'">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJmII-B2KnU2OhBLEeIHBB8qEhJuZ9ucVjaxIqNKXwAEGG9Xan"
+              class="card-img-top"
+            />
+          </ng-container>
+          <ng-container *ngIf="topic.categorie == 'Bugs'">
+            <img
+              src="https://i.ytimg.com/vi/xyAv5QXfBSE/maxresdefault.jpg"
+              class="card-img-top"
+            />
+          </ng-container>
+          <ng-container *ngIf="topic.categorie == 'Comptetions'">
+            <img
+              src="https://www.insidescandinavianbusiness.com/img/big/E-gamer.jpg"
+              class="card-img-top"
+            />
+          </ng-container>
+          <ng-container *ngIf="topic.categorie == 'Claims'">
+            <img
+              src="https://c4.wallpaperflare.com/wallpaper/284/1010/379/quote-minimalism-gas-masks-typography-wallpaper-preview.jpg"
+              class="card-img-top"
+            />
+          </ng-container>
+          <ng-container *ngIf="topic.categorie == 'Others'">
+            <img
+              src="https://img.chefdentreprise.com/Images/Breves/breve50234-0.JPG"
+              class="card-img-top"
+            />
+          </ng-container>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="pl-md-5">
+          <h3 class="h4 text-default font-weight-bold mb-4">
+            <h2 class="d-block"> {{topic.title}} </h2>
+          </h3>
+          <small class="d-block mb-2"> {{ topic.categorie }} </small>
+
+          <small class="d-block">
+            <i class="fa fa-user"></i> {{ topic.createdBy }}
+          </small>
+
+          <p class="lead">{{ topic.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-components">
+  <div class="container">
+    <h5 class="text-primary">
+      {{comments.length}} comments <i class="fa fa-comment"></i>
+    </h5>
+
+    <div *ngFor="let comment of comments">
+        <div class="row py-3 align-items-center cardDiv">
+          <div class="col-sm-1">
+<!--            src="{{ comment.commentedBy.avatar }}"-->
+            <img
+              src="../../../../assets/img/theme/team-1-800x800.jpg"
+              alt="Circle image"
+              class="img-fluid rounded-circle shadow"
+              style="width: 150px;"
+            />
+            <small class="d-block text-uppercase font-weight-bold mb-4">
+              {{ comment.commentedBy.name }}
+            </small>
+          </div>
+          <div class="col-sm-11">
+            <p>
+              {{ comment.text }}
+            </p>
+            <div class="text-right" *ngIf="comment.commentedBy._id === userLogged">
+              <button class="text-warning" (click)="deleteComment(comment._id)">delete</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="section section-lg pt-0">
+  <div class="container">
+    <div class="card bg-gradient-warning shadow-lg border-0">
+      <div class="p-5">
+        <form [formGroup]="addCommentFrom">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h3 class="text-white">
+                Write a response <i class="fa fa-reply"></i>
+              </h3>
+
+              <textarea
+                class="form-control form-control-alternative"
+                formControlName="text"
+                rows="4"
+                cols="80"
+                placeholder="Response .."
+              ></textarea>
+            </div>
+            <div class="col-lg-3 ml-lg-auto">
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-white"
+                [disabled]="!addCommentFrom.valid"
+                (click)="addComment()"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
